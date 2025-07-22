@@ -1,0 +1,31 @@
+.forecast_hours {
+	border: 1px solid var(--color-divider);
+	box-shadow: var(--color-shadow);
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	width: 800px;
+	height: 300px;
+	border-radius: 20px;
+	background-color: var(--color-card-glass);
+}
+
+.card_hour {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--color-text-primary);
+	font-family: var(--font-inter);
+	font-size: 17px;
+}
+
+.tempHour {
+	color: var(--color-text-primary);
+}
+.windHour {
+	color: var(--color-text-primary);
+	text-align: center;
+}
+.pressureHour {
+	text-align: center;
+}

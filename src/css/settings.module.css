@@ -1,0 +1,68 @@
+.settings {
+  width: 800px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 180%;
+  transform: translate(-50%);
+  background-color: var(--color-bg-secondary);
+	border-radius: 20px;
+	border: 1px solid var(--color-divider);
+	display: flex;
+	flex-direction: column;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.setting {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	gap: 20px;
+	font-size: 35px;
+	color: var(--color-text-primary);
+}
+.save_btn {
+	margin-top: auto;
+	background-color: var(--color-accent-blue);
+	padding: 20px;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	color: var(--color-text-secondary);
+	cursor: pointer;
+	transition: 0.4s;
+}
+.save_btn:hover {
+	background-color: var(--color-button-hover);
+}
+.open {
+	animation: appearence 0.2s;
+}
+.close {
+  animation: disappearance 0.2s ;
+}
+
+
+@keyframes appearence {
+	0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes disappearance {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

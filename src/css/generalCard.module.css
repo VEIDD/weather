@@ -1,0 +1,37 @@
+.general_card {
+	border: 1px solid var(--color-divider);
+	display: flex;
+	width: 800px;
+	height: 350px;
+	border-radius: 20px;
+	margin-top: 70px;
+	background-color: var(--color-card-glass);
+	box-shadow: var(--color-shadow);
+}
+.general_card span {
+	margin-top: 70px;
+	margin-left: 50px;
+}
+.general_card span h1, h2, h3 {
+	color: var(--color-text-primary);
+	font-family: var(--font-inter);
+}
+.general_card span h2 {
+	font-size: 40px;
+}
+.general_card span h3 {
+	font-size: 20px;
+}
+.general_card span h1 {
+	margin-top: -20px;
+	font-size: 170px;
+}
+.general_card span h1 sup {
+	margin-left: -40px;
+}
+
+.general_card img {
+	margin-left: 70px;
+	margin-top: 20px;
+}
+

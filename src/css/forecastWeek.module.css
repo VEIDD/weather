@@ -1,0 +1,31 @@
+.forecast_days {
+	border: 1px solid var(--color-divider);
+	box-shadow: var(--color-shadow);
+	width: 400px;
+	height: 680px;
+	margin-top: 70px;
+	border-radius: 20px;
+	background-color: var(--color-card-glass);
+}
+.list_days {
+	margin-top: 25px;
+	margin-left: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 42px;
+}
+.dayForecast {
+	color: var(--color-text-primary);
+	font-family: var(--font-inter);
+	font-size: 27px;
+	border-bottom: 1px solid var(--color-divider);
+	width: 320px;
+	padding-bottom: 15px;
+}
+
+.dayForecast:last-child {
+	border: none;
+}
+.toWeatherDay {
+	cursor: pointer;
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --color-bg-main: #0b0e13;
+  --color-bg-secondary: #131821;
+  --color-bg-hover: #1a1f28;
+
+  --color-text-primary: #b3bdc7;
+  --color-text-secondary: #ffffff;
+  --color-text-faint: #597896;
+
+  --color-accent-blue: #00d1ff;
+  --color-button-border: #5f6e88;
+  --color-button-hover: #4d7fca;
+
+  --color-footer-bg: #10141c;
+  --color-divider: #3f5070;
+
+  --color-shadow: rgba(0, 0, 0, 0.6)
+  --color-border-glow: rgba(0, 209, 255, 0.4);
+  --color-card-glass: rgba(255, 255, 255, 0.05);
+
+	--font-inter: "Inter", sans-serif;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}

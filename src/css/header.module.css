@@ -1,0 +1,94 @@
+.header {
+  height: 120px;
+  width: 100%;
+  background-color: var(--color-bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 2px solid var(--color-divider);
+  
+}
+
+.title {
+  color: var(--color-text-secondary);
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: 50px;
+  padding-left: 150px;
+  z-index: 999;
+}
+
+.btns {
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.searchBlock {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.search_icon {
+  position: absolute;
+  left: 15px;
+}
+.search {
+  width: 800px;
+  height: 50px;
+  border: 1px solid var(--color-divider);
+  border-radius: 10px;
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-faint);
+  font-size: 25px;
+  padding-left: 55px;
+}
+.search::placeholder {
+  color: var(--color-text-faint);
+}
+.search:focus-visible {
+  outline: none;
+}
+.btns button {
+	color: var(--color-text-secondary);
+	font-family: var(--font-inter);
+	font-size: 25px;
+	border-radius: 10px;
+	cursor: pointer;
+	position: relative;
+	left: 70px;
+	margin-right: 20px;
+}
+
+.btn_search {
+  padding: 12px 40px;
+  background-color: var(--color-accent-blue);
+	border: 1px solid var(--color-divider);
+}
+
+.btn_search:hover {
+  transition: 0.2s;
+  background-color: var(--color-button-hover);
+}
+
+.btn_settings {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20px;
+  background-color: var(--color-bg-secondary);
+	border: 1px solid var(--color-divider);
+  border-radius: 10px;
+  margin-left: 40px;
+}
+
+.btn_settings:hover {
+	background-color: var(--color-bg-hover);
+	transition: 0.2s;
+}
+
+.changeTheme {
+  background-color: transparent;
+  border: none;
+}
