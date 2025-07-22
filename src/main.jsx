@@ -1,7 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import { Layout } from './Layout'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Settings } from './components/Settings'
 import { Weather } from './components/weather/Weather'
 import { WeatherDay } from './components/weather/WeatherDay'
 createRoot(document.getElementById('root')).render(
