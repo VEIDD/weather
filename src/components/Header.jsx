@@ -43,7 +43,7 @@ export const Header = ({ onChangeTheme }) => {
   return (
     <header className={styles.header}>
       <Settings isOpen={showSettings} onClose={() => setShowSettings(false)} />
-      <NavLink to={"/"} className={styles.title}>
+      <NavLink to={"//"} className={styles.title}>
         Weather
       </NavLink>
       <div className={styles.btns}>
@@ -79,7 +79,7 @@ export const Header = ({ onChangeTheme }) => {
             setShowSettings((prev) => !prev);
           }}
         >
-          <img src={`${base}settings.svg`} alt="" width={30} />
+          <img src={`${base}settings_icon.svg`} alt="" width={30} />
         </button>
       </div>
     </header>

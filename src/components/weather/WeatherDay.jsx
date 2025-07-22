@@ -18,7 +18,11 @@ export const WeatherDay = () => {
   const [title, setTitle] = useState("");
   const [subtitle, setSubtitle] = useState("");
   const [isLoader, setIsLoader] = useState(false);
-  const settings = JSON.parse(localStorage.getItem("settings"));
+  const settings = JSON.parse(localStorage.getItem("settings")) || {
+    temp: { value: "temp_c", label: "Цельсій, C°" },
+    wind: { value: "m/s", label: "м/с" },
+    pressure: { value: "1", label: "мм.рт.ст" },
+  };
   useEffect(() => {
     if (Object.keys(data).length !== 0) {
       const filtered = data.forecast.forecastday.filter((v) => {
