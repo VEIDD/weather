@@ -5,16 +5,16 @@ import { useState } from "react";
 import { ThemeLoader } from "./components/changeTheme";
 
 export const Layout = () => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || "light");
-  
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  console.log("Layout rendered");
   return (
     <div>
       <ThemeContext.Provider value={theme}>
-        <ThemeLoader></ThemeLoader>
+      <ThemeLoader></ThemeLoader>
         <Header
           onChangeTheme={() => {
             setTheme(theme === "light" ? "dark" : "light");
-            localStorage.setItem('theme', theme === "light" ? "dark" : "light" )
+            localStorage.setItem("theme", theme === "light" ? "dark" : "light");
           }}
         ></Header>
         <Main></Main>
