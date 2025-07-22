@@ -49,7 +49,7 @@ export const Header = ({ onChangeTheme }) => {
       <div className={styles.btns}>
         <div className={styles.searchBlock}>
           <img
-            src="/search_icon.svg"
+            src={`${base}search_icon.svg`}
             alt=""
             width={25}
             className={styles.search_icon}
@@ -79,7 +79,7 @@ export const Header = ({ onChangeTheme }) => {
             setShowSettings((prev) => !prev);
           }}
         >
-          <img src="/settings_icon.svg" alt="" width={30} />
+          <img src={`${base}settings.svg`} alt="" width={30} />
         </button>
       </div>
     </header>
