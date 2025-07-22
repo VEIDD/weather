@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Weather } from './components/weather/Weather'
 import { WeatherDay } from './components/weather/WeatherDay'
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename='weather'>
+  <BrowserRouter basename='/weather'>
     <Routes>
       <Route path='/' element={<Layout/>} />
       <Route path='/weather-day' element={<WeatherDay/>} />
