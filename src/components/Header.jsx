@@ -43,7 +43,7 @@ export const Header = ({ onChangeTheme }) => {
   return (
     <header className={styles.header}>
       <Settings isOpen={showSettings} onClose={() => setShowSettings(false)} />
-      <NavLink to={"//"} className={styles.title}>
+      <NavLink to={"/"} className={styles.title}>
         Weather
       </NavLink>
       <div className={styles.btns}>
