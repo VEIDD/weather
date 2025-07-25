@@ -35,7 +35,7 @@ export const Dropdown = ({ isOpen, searchResult, clearInput, onClose }) => {
         return (
           <NavLink
             className={styles.name}
-            to={`/weather?city=${info.name}&lat=${info.boundingbox[0]}&lon=${info.boundingbox[2]}`}
+            to={`/weather-now?city=${info.name}&lat=${info.boundingbox[0]}&lon=${info.boundingbox[2]}`}
             key={index}
           >
             {info.display_name}

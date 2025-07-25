@@ -8,6 +8,7 @@ import { ForecastWeek } from "../cards/forecastWeek";
 import styles from "../../css/main.module.css";
 
 export const Weather = () => {
+  console.log('WEATHER')
   const [searchParams] = useSearchParams();
   const lat = searchParams.get("lat");
   const lon = searchParams.get("lon");
@@ -15,7 +16,11 @@ export const Weather = () => {
   const [data, setData] = useState({});
   const [title, setTitle] = useState("");
   const [isLoader, setIsLoader] = useState(false)
-  const settings = JSON.parse(localStorage.getItem('settings'))
+  const settings = JSON.parse(localStorage.getItem("settings")) || {
+    temp: { value: "temp_c", label: "Цельсій, C°" },
+    wind: { value: "m/s", label: "м/с" },
+    pressure: { value: "1", label: "мм.рт.ст" },
+  };
   const translate = async (name) => {
     setIsLoader(true)
     const res = await fetch(

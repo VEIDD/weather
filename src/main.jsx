@@ -8,7 +8,7 @@ createRoot(document.getElementById('root')).render(
     <Routes>
       <Route path='/' element={<Layout/>} />
       <Route path='/weather-day' element={<WeatherDay/>} />
-      <Route path='/weather' element={<Weather/>} />
+      <Route path='/weather-now' element={<Weather/>} />
     </Routes>
   </HashRouter>
 )
